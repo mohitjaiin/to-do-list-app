@@ -29,14 +29,14 @@ open index.html    # For macOS
 code .
 Then, right-click index.html → Open with Live Server.
 
-⚙️ Technologies Used
+## ⚙️ Technologies Used
 
 HTML5, CSS3, JavaScript
 Tailwind CSS + DaisyUI for styling
 LocalStorage for data persistence
 Boxicons for icons
 
-📌 How to Use
+## 📌 How to Use
 1️⃣ Type a task in the input field and press "➕ Add Task".
 
 2️⃣ Click on a task to mark it as Completed.
@@ -50,13 +50,13 @@ Boxicons for icons
 6️⃣ Tasks will remain saved even after refreshing the page!
 
 
-📜 License
+## 📜 License
 
 
 This project is licensed under the MIT License.
 
 
-🤝 Contribution Guidelines
+## 🤝 Contribution Guidelines
 
 Feel free to contribute!
 
