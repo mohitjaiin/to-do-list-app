@@ -38,20 +38,32 @@ Boxicons for icons
 
 📌 How to Use
 1️⃣ Type a task in the input field and press "➕ Add Task".
+
 2️⃣ Click on a task to mark it as Completed.
+
 3️⃣ Use the Edit button ✏️ to update a task.
+
 4️⃣ Click the Delete button ❌ to remove a task.
+
 5️⃣ Use the "Filter" dropdown to sort tasks (All / Pending / Completed).
+
 6️⃣ Tasks will remain saved even after refreshing the page!
+
 
 📜 License
 
+
 This project is licensed under the MIT License.
+
 
 🤝 Contribution Guidelines
 
 Feel free to contribute!
+
 Fork the repository
+
 Create a new branch (feature-new or bugfix-name)
+
 Commit changes
+
 Push and create a Pull Request
