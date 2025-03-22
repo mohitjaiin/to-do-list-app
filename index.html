@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Tailwind & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="res/icon.ico">
+</head>
+<body>
+    <div class="app-wrapper">
+        <header>
+            <h1>Task Tracker</h1>
+            <div class="message-box"></div>
+            <div class="input-area">
+                <input type="text" placeholder="Enter a task..." class="input input-bordered input-primary w-full max-w-xs" />
+                <input type="date" class="input input-bordered input-primary w-full max-w-xs date-selector" />
+                <button class="btn btn-primary add-btn">
+                    <i class="bx bx-plus bx-sm"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="task-controls">
+            <div class="dropdown">
+                <label tabindex="0" class="btn m-1">Filter</label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li onclick="filterTasks('all')"><a>All</a></li>
+                    <li onclick="filterTasks('pending')"><a>Pending</a></li>
+                    <li onclick="filterTasks('completed')"><a>Done</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-primary clear-btn">Remove All</button>
+        </div>
+
+        <table class="table w-full">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="task-list"></tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background-dark: #121212;
+    --container-bg: #1e1e1e;
+    --primary-color: #4caf50;
+    --secondary-color: #2196f3;
+    --danger-color: #e74c3c;
+    --text-light: #ffffff;
+    --border-color: #333;
+    --input-bg: #2c2c2c;
+    --table-header-bg: #252525;
+    --table-row-bg: #2e2e2e;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* App Wrapper */
+.app-wrapper {
+    background: var(--container-bg);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-area input {
+    padding: 10px;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+.input-area input::placeholder {
+    color: #bbb;
+}
+
+.add-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #3e8e41;
+}
+
+/* Task Controls */
+.task-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.clear-btn {
+    background: var(--danger-color);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clear-btn:hover {
+    background: #c0392b;
+}
+
+/* Task List Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: var(--table-header-bg);
+    color: var(--text-light);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--table-row-bg);
+}
+
+/* Buttons */
+.btn-warning {
+    background: #f1c40f;
+    color: black;
+}
+
+.btn-warning:hover {
+    background: #d4ac0d;
+}
+
+.btn-success {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.btn-success:hover {
+    background: #1976d2;
+}
+
+.btn-error {
+    background: var(--danger-color);
+    color: white;
+}
+
+.btn-error:hover {
+    background: #c82333;
+}
+
+/* Message Box */
+.message-box {
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+}
+
+.message-box.show {
+    display: block;
+    transform: scale(1);
+}
+
+.message-box.hide {
+    display: none;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Scrollbar for Dark Mode */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #45a049;
+}
